@@ -1,3 +1,5 @@
+document.querySelector(".btn-outline-success").addEventListener("click", playGame);
+document.querySelector(".btn-outline-danger").addEventListener("click", reset);
 function getRandomNumber(){
     var rn = (Math.random() * 6) + 1;
     rn = Math.floor(rn);
@@ -40,5 +42,3 @@ function reset(){
     document.querySelector(".img1").setAttribute("src", path);
     document.querySelector(".img2").setAttribute("src", path);
 }
-document.querySelector(".btn-outline-success").addEventListener("click", playGame);
-document.querySelector(".btn-outline-danger").addEventListener("click", reset);
