@@ -35,4 +35,5 @@ function playGame(){
     changeImage(player1, player2);
 }
 
+playGame();
 
