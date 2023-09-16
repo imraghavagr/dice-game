@@ -34,6 +34,11 @@ function playGame(){
     var player2 = getRandomNumber(); 
     changeImage(player1, player2);
 }
-
-playGame();
-
+function reset(){
+    document.querySelector("h1").innerHTML = "Roll the Dice";
+    var path = "./assets/images/dice"+6+".png";
+    document.querySelector(".img1").setAttribute("src", path);
+    document.querySelector(".img2").setAttribute("src", path);
+}
+document.querySelector(".btn-outline-success").addEventListener("click", playGame);
+document.querySelector(".btn-outline-danger").addEventListener("click", reset);
