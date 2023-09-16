@@ -12,8 +12,8 @@ function declareWinner(winner){
     }    
 }
 function changeImage(p1, p2){
-    var path1 = "./images/dice"+p1+".png";
-    var path2 = "./images/dice"+p2+".png";
+    var path1 = "./assets/images/dice"+p1+".png";
+    var path2 = "./assets/images/dice"+p2+".png";
     console.log(path1);
     console.log(path2);
     document.querySelector(".img1").setAttribute("src", path1);
